@@ -29,20 +29,15 @@ namespace WorkersDataUnitTests
 
                 { "Le Goff", "LE GOFF" },
                 { "De Mello Breyner Andersen", "DE MELLO BREYNER ANDERSEN" }
-
-                //MacDonald, McKeyneh
-
             };
 
             foreach(var person in examples)
             {
-                //Assert
                 Assert.AreEqual( person.Key, person.Value.SurnameNameFormat());
             }
            
         }
-
-
+        
         [TestMethod]
         public void TestFindWorkerDataInString()
         {
